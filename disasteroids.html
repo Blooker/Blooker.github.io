@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<!-- Set language as English -->
+<html lang="en">
+    <head>
+        <!-- Set charset to Unicode -->
+        <meta charset="UTF-8">
+        
+        <!-- Misc. website info -->
+        <meta name="author" content="Evan Griffiths">
+        <meta name="description" content="Disasteroids, a project by Evan Griffiths">
+        
+        <!-- Viewport stuff from here: https://youtu.be/bPo7hxD5gfI -->
+        <!-- Used to scale elements for mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        
+        <!-- Reference project page stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/project.css">
+        
+        <!-- PhotoSwipe stuff from here: http://photoswipe.com
+             Docs referenced here: http://photoswipe.com/documentation/getting-started.html 
+        -->
+        <link rel="stylesheet" href="lib/photoswipe/photoswipe.css">
+        <link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
+        
+        <!-- Set window/tab title -->
+        <title>Evan Griffiths | Disasteroids</title>
+        
+        <!-- Importing libraries -->
+        <!-- jQuery -->
+        <script src="lib/jquery-3.2.1.min.js"></script>
+        
+        <!-- jQuery UI -->
+        <script src="lib/jquery-ui/jquery-ui.js"></script>
+        
+        <!-- Anime.js -->
+        <script src="lib/anime.min.js"></script>
+        
+        <!-- jQuery UI Touch Punch from here: http://touchpunch.furf.com -->
+        <!-- Small "hack" that makes jQuery UI work with touchscreen devices -->
+        <script src="lib/jquery.ui.touch-punch.min.js"></script>
+        
+        <!-- PhotoSwipe libraries from here: http://photoswipe.com -->
+        <script src="lib/photoswipe/photoswipe.min.js"></script>
+        <script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
+        
+        <!-- My JS file with functionality for project page -->
+        <script src="js/project.js"></script>
+        
+    </head>
+    <body>
+        
+        <!-- Header bar (at top) -->
+        <header>
+            <div class="container">
+                <div id="page-title">
+                    <div id="name-box">
+                        <button id="home-button" type="button"><img id="home-icon" src="img/home_icon.png" alt="Home icon"></button>
+                        <h1>Evan Griffiths</h1>
+                    </div>
+
+                    <h2>Disasteroids</h2>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main area (between header and footer) -->
+        <main>
+            <div class="container">
+                
+                <!-- Div containing all photo gallery elements -->
+                <div id="gallery-container">
+                    <h2>Images</h2>
+                    
+                    <!-- "my-gallery" code from here (some modifications made): http://photoswipe.com/documentation/getting-started.html -->
+                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                        <div class="img-main">
+                            <!-- YouTube embed code from the share settings on this video: https://youtu.be/HxRwDKqCNqw -->
+                            <div id="yt-vid-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HxRwDKqCNqw?rel=0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="img-grid">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/disasteroids/disasteroids_SC2_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC2_small.jpg" itemprop="thumbnail" alt="Screenshot from the game containing a heart and ghost asteroid" width="255"/>
+                                </a>
+                            </figure>
+                            
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/disasteroids/disasteroids_SC1_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC1_small.jpg" itemprop="thumbnail" alt="The main menu of Disasteroids, featuring asteroids for buttons" width="255"/>
+                                </a>
+                            </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/disasteroids/disasteroids_SC3_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC3_small.jpg" itemprop="thumbnail" alt="Asteroid selection menu, where asteroids are split into 'power-up', 'special' and 'skins'" width="255"/>
+                                </a>
+                            </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/disasteroids/disasteroids_SC4_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC4_small.jpg" itemprop="thumbnail" alt="Screenshot from the game containing a armoured and rainbow asteroid" width="255"/>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <p id="gallery-instruction">Click to enlarge</p>
+                </div>
+                
+                <article>
+                    <h2>About</h2>
+                    <div id="article-content">
+                        <p>Disasteroids is a 2D action shooter game, built using Unity and C#. Shoot big hunks of extra-terrestrial rock in a bid to obtain golden asteroid pieces and unlock new asteroids to play with! As the game progresses, more and more asteroids are created, making it harder to avoid them. Make sure to shoot heart asteroids to regain health if you crash into one!</p>
+
+                        <p>This project isn’t quite finished; the current version has a handful of different asteroid types, including rainbow asteroids and ghost asteroids. Plans for future features include ship customisation and more power-up asteroids.</p>
+                        
+                        <a href="downloads/%5BEvan%20Griffiths%5D%20Disasteroids.zip">
+                            <img src="img/folder-icon.png">Download .exe for Windows
+                        </a>
+                    </div>
+                    <div id="my-role">
+                        <h3>My role</h3>
+                        <p>I am the sole developer on Disasteroids, creating all of the art and sound assets as well as programming the ship and asteroid behaviours. This was one of my first major Unity projects, and I used it to learn some of the fundamentals of the engine, such as its physics engine and sprite rendering capabilities.</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <ul>
+                    <li><a href="interactomy.html">Interactomy</a></li>
+                    <li><a href="march-the-cube.html">March The Cube</a></li>
+                    <li><a href="violence-vid-games.html">Violence in Video Games</a></li>
+                    <li><a href="disasteroids.html">Disasteroids</a></li>
+                </ul>
+                <p><a href="https://www.iconfinder.com/icons/183566/home_icon#size=128" target="_blank">Home Icon</a> By Yannick Lung</p>
+            </div>
+        </footer>
+        
+        <!-- Rest of code inside body is from here: http://photoswipe.com/documentation/getting-started.html -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </body>
+</html>

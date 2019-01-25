@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<!-- Set language as English -->
+<html lang="en">
+    <head>
+        <!-- Set charset to Unicode -->
+        <meta charset="UTF-8">
+        
+        <!-- Misc. website info -->
+        <meta name="author" content="Evan Griffiths">
+        <meta name="description" content="March The Cube, a project by Evan Griffiths">
+        
+        <!-- Viewport stuff from here: https://youtu.be/bPo7hxD5gfI -->
+        <!-- Used to scale elements for mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        
+        <!-- Reference project page stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/project.css">
+        
+        <!-- PhotoSwipe stuff from here: http://photoswipe.com
+             Docs referenced here: http://photoswipe.com/documentation/getting-started.html 
+        -->
+        <link rel="stylesheet" href="lib/photoswipe/photoswipe.css">
+        <link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
+        
+        <!-- Set window/tab title -->
+        <title>Evan Griffiths | March The Cube</title>
+        
+        <!-- Importing libraries -->
+        <!-- jQuery -->
+        <script src="lib/jquery-3.2.1.min.js"></script>
+        
+        <!-- jQuery UI -->
+        <script src="lib/jquery-ui/jquery-ui.js"></script>
+        
+        <!-- Anime.js -->
+        <script src="lib/anime.min.js"></script>
+        
+        <!-- jQuery UI Touch Punch from here: http://touchpunch.furf.com -->
+        <!-- Small "hack" that makes jQuery UI work with touchscreen devices -->
+        <script src="lib/jquery.ui.touch-punch.min.js"></script>
+        
+        <!-- PhotoSwipe libraries from here: http://photoswipe.com -->
+        <script src="lib/photoswipe/photoswipe.min.js"></script>
+        <script src="lib/photoswipe/photoswipe-ui-default.min.js"></script>
+        
+        <!-- My JS file with functionality for project page -->
+        <script src="js/project.js"></script>
+        
+    </head>
+    <body>
+        
+        <!-- Header bar (at top) -->
+        <header>
+            <div class="container">
+                <div id="page-title">
+                    <div id="name-box">
+                        <button id="home-button" type="button"><img id="home-icon" src="img/home_icon.png" alt="Home icon"></button>
+                        <h1>Evan Griffiths</h1>
+                    </div>
+                    <h2>March The Cube</h2>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main area (between header and footer) -->
+        <main>
+            <div class="container">
+                
+                <!-- Div containing all photo gallery elements -->
+                <div id="gallery-container">
+                    <h2>Images</h2>
+                    
+                    <!-- "my-gallery" code from here (some modifications made): http://photoswipe.com/documentation/getting-started.html -->
+                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                        <div class="img-main">                    
+                            <div id="yt-vid-container">
+                                <!-- YouTube embed code from the share settings on this video: https://youtu.be/2-__Ga1Ijuw -->
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2-__Ga1Ijuw?rel=0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <div class="img-grid">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/march-the-cube/march-the-cube_SC1_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/march-the-cube/march-the-cube_SC1_small.jpg" itemprop="thumbnail" alt="Screenshot from the game, picturing a dark cave with enemies in the distance" width="255"/>
+                                </a>
+                            </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/march-the-cube/march-the-cube_SC2_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/march-the-cube/march-the-cube_SC2_small.jpg" itemprop="thumbnail" alt="Screenshot from the game, picturing a different area of the dark cave" width="255"/>
+                                </a>
+                            </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/march-the-cube/march-the-cube_SC3_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/march-the-cube/march-the-cube_SC3_small.jpg" itemprop="thumbnail" alt="The game's main menu, where the player can enter a map seed or randomly generate one" width="255"/>
+                                </a>
+                            </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/march-the-cube/march-the-cube_SC4_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/march-the-cube/march-the-cube_SC4_small.jpg" itemprop="thumbnail" alt="Screenshot from the game, featuring multiple enemies attacking the player" width="255"/>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <p id="gallery-instruction">Click to enlarge</p>
+                </div>
+                
+                <article>
+                    <h2>About</h2>
+                    <div id="article-content">
+                        <p>March The Cube is a first person shooter with procedurally generated levels, built using Unity and C# for my second year computer science project at Sussex Downs College, Lewes. The player has to run around a cave formation, shooting evil blue orbs and collecting health and ammo. They have won when all the angry sphere people are no more!</p>
+
+                        <p>The project was created to learn about procedural generation using the marching cubes algorithm (hence the name) and cellular automata. I achieved an A* at A level for my work.</p>
+                    </div>
+                    <div id="my-role">
+                        <h3>My role</h3>
+                        <p>I was the sole developer on this project; I created the implementation of the marching cubes algorithm from scratch in C#, referring to materials that I found about it on the internet. I also designed the menus and graphics in the game.</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <ul>
+                    <li><a href="interactomy.html">Interactomy</a></li>
+                    <li><a href="march-the-cube.html">March The Cube</a></li>
+                    <li><a href="violence-vid-games.html">Violence in Video Games</a></li>
+                    <li><a href="disasteroids.html">Disasteroids</a></li>
+                </ul>
+                <p><a href="https://www.iconfinder.com/icons/183566/home_icon#size=128" target="_blank">Home Icon</a> By Yannick Lung</p>
+            </div>
+        </footer>
+        
+        <!-- Rest of code inside body is from here: http://photoswipe.com/documentation/getting-started.html -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </body>
+</html>

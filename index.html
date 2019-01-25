@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<!-- Set language as English -->
+<html lang="en">
+    <head>
+        <!-- Set charset to Unicode -->
+        <meta charset="UTF-8">
+        
+        <!-- Misc. website info -->
+        <meta name="author" content="Evan Griffiths">
+        <meta name="description" content="Portfolio site for Evan Griffiths">
+        
+        <!-- Next line from here: https://youtu.be/bPo7hxD5gfI -->
+        <!-- Used to scale elements for mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        
+        <!-- Reference home page stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/home.css?v=1.0">
+        
+        <!-- Set window/tab title -->
+        <title>Evan Griffiths | Portfolio</title>
+        
+        <!-- Importing libraries -->
+        <!-- jQuery -->
+        <script src="lib/jquery-3.2.1.min.js"></script>
+        
+        <!-- jQuery UI -->
+        <script src="lib/jquery-ui/jquery-ui.js"></script>
+    
+        <!-- Anime.js-->
+        <script src="lib/anime.min.js"></script>
+        
+        <!-- jQuery UI Touch Punch from here: http://touchpunch.furf.com -->
+        <!-- Small "hack" that makes jQuery UI work with touchscreen devices -->
+        <script src="lib/jquery.ui.touch-punch.min.js"></script>
+        
+        <!-- My JS file with functionality for homepage -->
+        <script src="js/home.js?v=1.0"></script>
+        
+    </head>
+    <body>
+        <div class="hidden">
+            <script type="text/javascript">
+                <!--//--><![CDATA[//><!--
+                    var images = new Array()
+                    function preload() {
+                        for (i = 0; i < preload.arguments.length; i++) {
+                            images[i] = new Image()
+                            images[i].src = preload.arguments[i]
+                        }
+                    }
+                    preload(
+                        "img/interactomy/interactomy_DropAreaImg.jpg",
+                        "img/march-the-cube/march-the-cube_DropAreaImg.jpg",
+                        "img/violence-vid-games/violence-vid-games_DropAreaImg.jpg",
+                        "img/disasteroids/disasteroids_DropAreaImg.jpg"
+                    )
+                //--><!]]>
+            </script>
+        </div>
+        
+        <!-- Header bar (at top) -->
+        <header>
+            <div class="container">
+                <div id="page-title">
+                    <h1 id="my-name">Evan Griffiths</h1>
+<!--                    <h1 id="pipe">|</h1>-->
+                    <h2 id="project-name">Software Developer</h2>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main area (between header and footer) -->
+        <main>
+            
+            <div id="textbox" class="container">
+                <div id="scroll-anchor">
+                    <b><p>Scroll to see more</p></b>
+                </div>
+                
+                <h1>Ambitious, motivated and always learning</h1>
+                <p>I'm a Software Developer based in London, and I'm currently studying for a bachelor's degree in Computer Science at <span class="highlight"><b><i>Goldsmiths, University of London</i></b></span>.</p>
+
+                <p>I love solving problems and designing systems for apps, games and websites, as well as working with and explaining my code to others.</p>
+
+                <p>I'm eager to work with industry professionals and students alike, and I'm excited to learn how to use new technologies and programming languages.</p>
+                
+                <p id="mobile-break"><br></p>
+            </div>
+            
+            <div id="roulette" class="container">
+                
+                <!-- Project icons -->
+                <div class="icon-container">
+                    <div class="engine-icon">
+                        <img class="unity-icon" src="img/engine-icons/unity-icon.png">
+                    </div>
+                    
+                    <div class="project-icon green-icon">
+                        <p class="centered">Interactomy</p>
+                        <a href="interactomy.html"></a>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <div class="engine-icon">
+                        <img class="unity-icon" src="img/engine-icons/unity-icon.png">
+                    </div>
+                    
+                    <div class="project-icon blue-icon">
+                        <p class="centered">March The Cube</p>
+                        <a href="march-the-cube.html"></a>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <div class="engine-icon">
+                        <img class="play-icon" src="img/engine-icons/youtube-icon.png">
+                    </div>
+                    
+                    <div class="project-icon red-icon">
+                        <p class="centered">Violence in Video Games</p>
+                        <a href="violence-vid-games.html"></a>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <div class="engine-icon">
+                        <img class="unity-icon" src="img/engine-icons/unity-icon.png">
+                    </div>
+                    
+                    <div class="project-icon turq-icon">
+                        <p class="centered">Disasteroids</p>
+                        <a href="disasteroids.html"></a>
+                    </div>
+                </div>
+<!--
+                <div class="icon-container">
+                    <div class="engine-icon">
+                        <img class="unity-icon" src="img/engine-icons/unity-icon.png">
+                    </div>
+                    
+                    <div class="project-icon purple-icon">
+                        <p class="centered">Don't Drop The Ball</p>
+                        <a href="ddtb.html"></a>
+                    </div>
+                </div>
+-->
+<!--
+                <div class="icon-container">
+                    <div class="engine-icon">
+                        <img class="unreal-icon" src="img/engine-icons/unreal-icon.png">
+                    </div>
+                    
+                    <div class="project-icon yellow-icon">
+                        <p class="centered">Audio Visualiser</p>
+                        <a href="audio-viz.html"></a>
+                    </div>
+                </div>
+-->
+                
+                <div id="project-drop" class="project-drop-regular">
+                    <p class="centered">Drag + drop project icon here</p>
+                </div>
+                
+                <!-- Project drop area -->
+                <div id="project-drop-bg" class="project-drop-bg">
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer bar (at bottom) -->
+        <footer>
+            <div class="container">
+                <ul>
+                    <li><a href="interactomy.html">Interactomy</a></li>
+                    <li><a href="march-the-cube.html">March The Cube</a></li>
+                    <li><a href="violence-vid-games.html">Violence in Video Games</a></li>
+                    <li><a href="disasteroids.html">Disasteroids</a></li>
+                </ul>
+                <p><a href="https://www.iconfinder.com/icons/183566/home_icon#size=128" target="_blank">Home Icon</a> By Yannick Lung, <a href="https://www.flaticon.com/free-icon/play-button_109197#term=play&page=1&position=16" target="_blank">Play Icon</a> by Freepik</p>
+            </div>
+        </footer>
+    </body>
+</html>

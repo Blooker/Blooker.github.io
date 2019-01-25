@@ -1,0 +1,767 @@
+.hidden {
+    display: none;
+}
+
+main, header, footer .container {
+    display: none;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+body {
+    z-index: -2;
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;        
+    background-color: #eee;
+    overflow:hidden;
+    position: relative;
+}
+ 
+.container {
+    padding: 0 10px 0 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.centered { 
+    text-align: center;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #00BAFF;
+    
+    position: fixed;
+    width: 100%;
+/*    height: 45px;*/
+    z-index: 1;
+}
+
+header .container {
+    padding: 0;
+}
+
+header #page-title * {
+    display: inline-block;
+    margin: 0;
+/*    border-width:*/
+    border-radius: 0 0 15px 0;
+    
+
+    vertical-align: middle;
+}
+
+header #page-title h1 {
+/*    margin: 0 10px 0 0;*/
+    padding: 0 12px 0px 10px;
+    color: white;
+    background-color: #00BAFF;
+/*    background: -webkit-linear-gradient(9deg, #0074FF 0%, #48DDFF 150%);*/
+}
+
+header #page-title h2 {
+/*    height: 45px;*/
+    line-height: 45px;
+    box-shadow: 0 0 0 2px #00BAFF;
+    margin: 0 0 0 -14px;
+    padding: 0 0 0 20px;
+/*    border-right: 3px solid #00BAFF;*/
+
+    padding-right: 15px;
+    vertical-align: middle;
+}
+
+/* Main */
+main {
+    width:100%;
+    height: inherit;
+/*    background-color: #f4f4f4;*/
+}
+
+main .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#roulette{
+    position: absolute;
+    z-index: 3;
+}
+
+#roulette.container {
+    height: 93vh;
+}
+
+#textbox{
+    top: 50vh;
+    left: 25vw;
+    width: 600px;
+    height: 500px;
+    border-style: solid;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #b1b1b1;
+    
+    background-color: #fcfcfc;
+    
+    margin: -260px 0 0 -300px;
+    
+
+}
+
+#textbox h1 {    
+    color: black;
+        
+    font-size: 2.7em;
+    background: -webkit-linear-gradient(44.99deg, #00B3FF 0%, #5800FF 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    margin: 0;
+    background-color: white;
+    padding: 10px 2px 10px 15px;
+    border-bottom: 2px solid #00BAFF;
+}
+
+#textbox p {
+    margin: 10px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+#textbox #scroll-anchor {
+    position:fixed;
+    display:inline;
+    
+    width:inherit;
+    
+    display: none;
+}
+
+#textbox #mobile-break {
+    display: none;
+}
+
+#textbox #scroll-anchor p {
+    position: relative;
+    color: #00BAFF;
+    height: 40px;
+    top: 104px;
+/*    background-color: #fcfcfc;*/
+    background: -webkit-linear-gradient(90deg, #fcfcfc 30%, #ffffff00 100%);
+    text-align: center;
+    line-height: 57px;
+    margin: 6px 6px 0 6px;
+    
+}
+
+
+/* Project icons */
+.icon-container {
+    position: absolute;
+
+    
+    z-index: 1;
+}
+
+.engine-icon {
+    width: 40px;
+    height: 40px;
+    
+    background-color: white;
+    
+    border: 1px solid grey;
+    border-radius: 40px;
+
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.engine-icon img {
+    margin:auto;
+    position: relative;
+}
+
+.unity-icon {
+    width:30px;
+    top: 4px;
+    left: 3px;
+}
+
+.unreal-icon {
+    width: 42px;
+    top: -1px;
+    left: -1px;
+}
+
+.play-icon {
+    width: 28px;
+    top: 7px;
+    left: 6px;
+}
+
+.project-icon {
+    background-color: #ffffff;
+    border: 2px solid #c0c0c0;
+    
+    
+/*    line-height: 1.2em;*/
+    
+    
+    
+    margin: 5px;
+    
+    vertical-align: middle;
+    
+    display: table;
+    
+    width: 100px;
+    height: 100px;
+}
+
+/* vert center code from https://css-tricks.com/vertically-center-multi-lined-text */
+.project-icon p {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
+}   
+
+.blue-icon, .red-icon, .green-icon, .yellow-icon, .turq-icon, .purple-icon {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 1px 5px black;
+    border-radius: 10px;
+    border-width: 1.5px;
+    border:0;
+}
+
+.blue-icon {
+    background-color: #00BAFF;
+    
+    background: -webkit-linear-gradient(44.99deg, #00B3FF 0%, #5800FF 100%);
+    
+    border-color: #EA3617;
+    
+}
+
+.red-icon {
+    background-color: #FF2847;
+    background: -webkit-linear-gradient(50.99deg, #FF1FC2 0%, #FF2847    100%);
+}
+
+.green-icon {
+    background-color: #00B25F;
+    background: -webkit-linear-gradient(50.99deg, #82FF00 0%, #00B25F    100%);
+}
+
+.yellow-icon {
+    background-color: #FFD200;
+    background: -webkit-linear-gradient(50.99deg, #E85600 0%, #FFD200    100%);
+}
+
+.turq-icon {
+    background-color: #009EDB;
+    background: -webkit-linear-gradient(50.99deg, #0AFF88 0%, #009EDB 100%);
+}
+
+.purple-icon {
+    background-color: #3EA100;
+    background: -webkit-linear-gradient(50.99deg, #DA00DC 0%, #5737DC 100%);
+}
+
+
+
+/* Project drop */
+#project-drop, #project-drop-bg {
+    z-index: 1;
+        
+    border-radius: 2000px;
+    
+    position: absolute;
+    
+    vertical-align: middle;
+    
+    font-size: 1.3em;
+    
+    left: 70vw;
+    top: 45vh;
+    
+    width: 350px;
+    height: 350px;
+    margin: -150px 45px 0 -177px;
+    
+    background-color: #fcfcfc;
+    border: 1px solid #a0a0a0;
+    background-image: none;
+}
+
+#project-drop {
+    vertical-align: middle;
+    display: table;
+}
+
+#project-drop * {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#project-drop-bg {
+    background-color: none;
+    border: 1px solid #707070;
+    background-position: center;
+    background-size: 622px 350px;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+}
+
+footer .container {
+    border-top: 2px solid #00BAFF;
+    padding: 0;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;   /* Height of the footer */
+    background:white;
+    vertical-align: middle;
+}
+
+footer p {
+    font-style: italic;
+    font-size: 0.8em;
+    margin: 0;
+    text-align: center;
+    line-height: 12px;
+    width: 100%;
+}
+
+footer ul  {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 30px;
+    text-align: center;
+}
+
+footer li {
+
+    display: inline;
+    margin: 0 10px;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Media queries */
+@media (max-width: 1380px), (max-height: 823px) {
+    header #page-title h1 {
+        font-size: 1.5em;
+    }
+    
+    header #page-title h2 {
+        font-size: 1.2em;
+        line-height: 33px;
+    }
+    
+    header #page-title * {
+        border-radius: 0 0 10px 0;
+    }
+    
+    .engine-icon {
+        width: 30px;
+        height: 30px;
+
+        top: -12px;
+        left: -12px;
+    }
+
+    .unity-icon {
+        width:20px;
+        top: 5px;
+        left: 4px;
+    }
+    
+    .unreal-icon {
+        width: 32px;
+        top: -1px;
+        left: -1px;
+    }
+
+    .play-icon {
+        width: 18px;
+    }
+    
+    .project-icon {
+        width: 72px;
+        height: 72px;
+    }
+    
+    .project-icon * {
+        line-height: 1.2em;
+        font-size: 0.84em;
+    }
+    
+    #project-drop, #project-drop-bg {
+        width: 250px;
+        height: 250px;
+        margin: -108px 45px 0 -126px;
+/*        font-size: 1.2em;*/
+
+    }
+    
+    #project-drop-bg {
+        background-size: 445px 250px;
+    }
+    
+    #textbox{
+        top: 50vh;
+        left: 25vw;
+        width: 350px;
+        height: 500px;
+        border-style: solid;
+        position: absolute;
+        z-index: 2;
+        border: 1px solid #b1b1b1;
+
+        margin: -265px 0 0 -160px;
+    }
+    
+    #textbox h1 {
+        font-size: 2em;
+    }
+    
+    #textbox p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 930px) {
+    footer .container {
+        height:40px;   /* Height of the footer */
+    }
+    
+    footer p, footer li {
+        font-size: 0.6em;
+    }
+    
+    footer ul {
+        line-height: 20px;
+    }
+    
+    footer li {
+        margin: 0 1px;
+    }
+    
+    #project-drop, #project-drop-bg {
+        width: 200px;
+        height: 200px;
+        margin: -80px 45px 0 -100px;
+/*        font-size: 0.9em;*/
+        
+        left: 70vw;
+        top: 45vh;
+    }
+
+    #project-drop * {
+/*        line-height: 200px;*/
+
+    }
+    
+    .project-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .project-icon * {
+        font-size: 0.75em;
+    }
+    
+    #project-drop-bg {
+        background-size: 355px 200px;
+    }
+    
+    #textbox{
+        top: 50vh;
+        left: 25vw;
+        width: 250px;
+        height: 500px;
+        border-style: solid;
+        position: absolute;
+        z-index: 2;
+        border: 1px solid #b1b1b1;
+
+        margin: -265px 0 0 -125px;
+    }
+    
+    #textbox h1{
+        font-size: 1.2em;
+        padding: 5px 1px 5px 7.5px;
+    }
+    
+    #textbox p {
+        margin: 10px;
+        margin-bottom: 15px;
+        font-size: 1.07em;
+    }
+}
+
+
+@media (max-width: 720px),(max-height: 610px) {
+    footer .container {
+        height:40px;   /* Height of the footer */
+    }
+    
+    footer p, footer li {
+        font-size: 0.6em;
+    }
+    
+    footer ul {
+        line-height: 20px;
+    }
+    
+    footer li {
+        margin: 0 1px;
+    }
+    
+    #roulette.container {
+        height: 62vh;
+    }
+    
+    #project-drop, #project-drop-bg {
+        width: 250px;
+        height: 250px;
+        margin: -110px 45px 0 -125px;
+/*        font-size: 1em;*/
+        
+        left: 50vw;
+        top: 30vh;
+    }
+
+    #project-drop * {
+/*        line-height: 250px;*/
+
+    }
+    
+    .project-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .project-icon * {
+        font-size: 0.75em;
+    }
+    
+    #project-drop-bg {
+        background-size: 444px 250px;
+    }
+    
+    #textbox{
+        top: 75vh;
+        left: 50vw;
+        width: 300px;
+        height: 200px;
+        border-style: solid;
+        position: absolute;
+        z-index: 2;
+        border: 1px solid #b1b1b1;
+        overflow-y: scroll;
+
+        margin: -125px 0 0 -145px;        
+    }
+    
+    #textbox h1{
+        font-size: 1.2em;
+        padding: 5px 1px 5px 7.5px;
+    }
+    
+    #textbox p {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 415px) {
+    header #page-title h1 {
+        font-size: 1.3em;
+    }
+    
+    header #page-title h2 {
+        font-size: 1em;
+        line-height: 29px;
+    }
+    
+    header #page-title * {
+        border-radius: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 415px), (max-height: 610px) {
+    footer .container {
+        height:40px;
+    }
+    
+    footer p, footer li {
+        font-size: 0.6em;
+    }
+    
+    footer ul {
+        line-height: 20px;
+    }
+    
+    footer li {
+        margin: 0 1px;
+    }
+    
+    #project-drop, #project-drop-bg {
+        width: 150px;
+        height: 150px;
+        margin: -65px 45px 0 -75px;
+        font-size: 1em;
+        
+        left: 50vw;
+        top: 30vh;
+    }
+
+    #project-drop * {
+/*        line-height: 175px;*/
+
+    }
+    
+    .project-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .project-icon * {
+        font-size: 0.57em;
+    }
+
+    #project-drop, #project-drop-bg {  
+        margin: -65px 45px 0 -75px;        
+        top: 32.5vh;
+    }
+    
+    #project-drop-bg {
+        background-size: 266px 150px;
+    }
+    
+    #textbox{
+        top: 75vh;
+        left: 50vw;
+        width: 200px;
+        height: 150px;
+        border-style: solid;
+        position: absolute;
+        z-index: 2;
+        border: 1px solid #b1b1b1;
+
+        margin: -70px 0 0 -100px;
+    }
+    
+    #textbox h1{
+        font-size: 1em;
+        padding: 5px 1px 5px 7.5px;
+    }
+}
+
+@media (max-height: 532px) {
+    #roulette.container {
+        z-index: 1;
+        width: 50v;
+        height: 86vh;
+    }
+    
+    #textbox {
+        top: 50vh;
+        left: 25vw;
+        width: 150px;
+        height: 200px;
+        
+        margin: -105px 0 0 -100px;
+    }
+    
+    #project-drop, #project-drop-bg {
+        width: 125px;
+        height: 125px;
+        margin: -52.5px 45px 0 -62.5px;
+        font-size: 0.8em;
+        
+        left: 70vw;
+        top: 45vh;
+    }
+    
+    #project-drop * {
+/*        line-height: 125px;*/
+    }
+    
+    #project-drop-bg {
+        background-size: 222px 125px;
+    }
+    
+    #textbox #scroll-anchor p {
+        top: 154px;
+    }
+}
+
+/*
+@media (max-height: 502px) {
+    #project-drop, #project-drop-bg {
+        width: 120px;
+        height: 120px;
+        margin: -63px 45px 0 -60px;
+        font-size: 0.55em;
+    }
+
+    #project-drop * {
+        line-height: 120px;
+
+    }
+    
+    .project-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .project-icon * {
+        font-size: 0.58em;
+    }
+    
+    #project-drop-bg {
+        background-size: 213px 120px;
+    }
+}
+*/
+
+
+/* Viewport stuff from here: https://youtu.be/bPo7hxD5gfI */
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}

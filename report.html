@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Report</title>
+        <style>
+            .container {
+                background-color: #eee;
+                width: 80%;
+                margin: auto;
+                font: 15px/1.5 Arial, Helvetica, sans-serif;
+                padding: 10px;
+            }
+            
+            #site-link {
+                font-size: 5em;
+            }
+            
+            h3, h4 {
+                text-align: center;
+            }
+            
+            h4 {
+                margin:0;   
+            }
+            
+            img {
+                width: 80%;
+                height: auto;
+                display: block;
+                margin: 0 auto 20px auto;
+                border: 3px solid black;
+            }
+            
+            #sources {
+                line-height: 2.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Report: Large Coursework</h1>
+            <h2>by Evan Griffiths</h2>
+            
+            <a id="site-link" href="http://doc.gold.ac.uk/~egrif001/webdev/final-site" target="_blank">Link to live site</a>
+            
+            <h2>Introduction</h2>
+            <p>My website is a portfolio of work that I have done in the past 5 years, extracurricular or otherwise. I chose to display this information about my work in multiple separate pages that are accessed through a unique drag and drop menu on the index page.</p>
+            
+            <h2>Inspirations</h2>
+            <p>I was inspired to implement the drag and drop menu after being introduced to jQuery UI in one of Dr. Sarah Wiseman’s lectures. Examples of the draggable and droppable classes were shown, and I was curious to see how I could base a whole website around that functionality.</p>
+            
+            <p>The styling of the blue, red, green and pink project icons on the home page was inspired by the buttons on a Dualshock controller from all of the iterations of the PlayStation console, which have the same colours.</p>
+            
+            <p>The layout of my project pages was inspired by the layout of the game pages on the Steam website, where two thirds of the page space are dedicated to videos/photos of the games, while a third is dedicated to a writeup about that game.</p>
+            
+            <h2>Accessibility</h2>
+            <p>All of the images on my site have alt tags, meaning that any text to speech software used by people with visual impairments will be able to pick up and read a description of the images.</p>
+            
+            <p>In one case on my website, I have used an abbreviation to save space. I made sure to put periods between each letter in this abbreviation to make sure that text to speech software would read it out properly.</p>
+            
+            <p>I have made sure that all text on the website is either black and placed directly over a light grey or white background or white and placed over a vibrant colour that isn’t too bright. I took screenshots of my pages and converted them to greyscale to make sure that text was still easy to read for people who are colour-blind.</p>
+            
+            <h2>Usability</h2>
+            
+            <p>If none of the JavaScript on any of the pages works, this will result in the drag and drop menu not working. However, in this situation the website could still be easily navigated using the links in the footer of the page.</p>
+            
+            <p>The images on the project pages only take up the whole page when the user clicks or taps on them to enlarge them. This is especially useful on mobile, where there isn’t a lot of screen real estate to work with.</p>
+            
+            <p>The high resolution versions of images on my websites are not automatically displayed upon a page loading. Instead, they are initially represented by much lower resolution thumbnails. This reduces the amount of time it takes for the page to load, as well as reducing unnecessary data use on mobile.</p>
+
+            <h2>What I learnt</h2>
+            <p>Before this project, I had never used jQuery UI before. I had to learn about it to be able to implement the drag and drop code on my website. Upon learning about it, I also found out how to do object fade in/fade out transitions, which I used to polish the site.</p>
+            
+            <p>I learnt a lot about CSS positioning, which I have found very frustrating in the past. I can now make a website and know that I can position elements side by side, in grids, or at the centre of the page with some confidence.</p>
+            
+            <p>I learnt how to dynamically reposition HTML elements at runtime using JavaScript with jQuery. This was used to make the spinning icons effect on the homepage.</p>
+
+            
+            <h2>What went well</h2>
+            <p>I managed to fully realise my drag and drop menu, creating custom JavaScript code to make the project icons rotate around the centre of the page when not being dragged and follow the mouse when being dragged.</p>
+            
+            <p>I think my use of jQuery UI animations isn’t obtrusive or obnoxious, and improves the interactivity and presentation of the website as a whole (e.g. fading in project thumbnail when dragging an icon over the drop area).</p>
+            
+            <p>The colour scheme and layout of my website ensures that the most important content on a page is the largest and most prevalent, while also making sure that text content is well organised and easy to read.</p>
+            
+            <h2>What I'd improve</h2>
+            
+            <p>I would have liked to give all of the pages more interesting backgrounds that were relevant to the individual projects. For instance, I would have liked to have a space themed background on the Disasteroids page, or an anatomy themed background on the Interactomy page.</p>
+            
+            <p>I have used flexbox and CSS grid throughout a lot of my project pages, which are both relatively new technologies that may not be supported on a lot of older browsers. I would have liked to find a way to recreate the same results I got, but with CSS techniques that are more widely supported.</p>
+            
+            <p>There is a video on my website that contains dialogue, but does not have subtitles. This makes that content inaccessible for people who have problems with hearing. In the future, I would ensure that any YouTube content has the appropriate subtitles or closed captions.</p>
+            
+            <h2>Screenshots</h2>
+            <h3>Home page</h3>
+            
+            <h4>HTML</h4>
+            <img src="img/report/index_html.png">
+            
+            <h4>CSS</h4>
+            <img src="img/report/index_css.png">
+            
+            <h4>JS</h4>
+            <img src="img/report/index_js.png">
+            
+            <h3>Project page</h3>
+            
+            <h4>HTML</h4>
+            <img src="img/report/interactomy_html.png">
+            
+            <h4>CSS</h4>
+            <img src="img/report/interactomy_css.png">
+            
+            <h4>JS</h4>
+            <img src="img/report/interactomy_js.png">
+            
+            <h2>Wireframes</h2>
+            <img src="img/report/wireframe.png">
+            
+            <h2>Resources used</h2>
+            
+            <p><b>jQuery:</b> <a href="https://jquery.com">https://jquery.com</a></p>
+            <p><b>jQuery UI: </b> <a href="https://jqueryui.com">https://jqueryui.com</a></p>
+            <p><b>jQuery UI Touch Punch:</b> <a href="http://touchpunch.furf.com">http://touchpunch.furf.com</a></p>
+            <p><b>PhotoSwipe:</b> <a href="http://photoswipe.com">http://photoswipe.com </a></p>
+            
+            <h2>References</h2>
+            <p id="sources">
+                [1] jQuery, "jQuery API", 2018 [Online]. Available: <a href="https://api.jquery.com">https://api.jquery.com</a><br>
+                [2] jQuery UI, "jQuery UI 1.12 API Documentation", 2018 [Online]. Available: <a href="https://api.jqueryui.com">https://api.jqueryui.com</a><br>
+                [3] T. Heylen, “5 MIN TUTORIAL - Responsive Web Design - SIMPLE EASY”, 2014 [Online]. Available: <a href="https://youtu.be/bPo7hxD5gfI">https://youtu.be/bPo7hxD5gfI</a><br>
+                [4] D. Semenov, “PhotoSwipe: Getting Started”, 2014 [Online]. Available: <a href="http://photoswipe.com/documentation/getting-started.html">http://photoswipe.com/documentation/getting-started.html</a><br>
+                [5] A. Johny, “data(“draggable”) is undefined in jQuery-ui-1.10.3”, 2013 [Online]. Available: <a href="https://stackoverflow.com/questions/18850289/datadraggable-is-undefined-in-jquery-ui-1-10-3">https://stackoverflow.com/questions/18850289/datadraggable-is-undefined-in-jquery-ui-1-10-3</a><br>
+                [6] S. Spence, “Unity3D - Circular Motion”, 2014 [Online]. Available: <a href="https://youtu.be/BGe5HDsyhkY">https://youtu.be/BGe5HDsyhkY</a><br>
+                [7] C. Coyier, “Vertically Center Multi-Lined Text”, 2009 [Online]. Available: <a href="https://css-tricks.com/vertically-center-multi-lined-text/">https://css-tricks.com/vertically-center-multi-lined-text/</a><br>
+                [8] L. Pacholski, “CSS Diner”, 2016 [Online]. Available: <a href="https://flukeout.github.io">https://flukeout.github.io</a><br>
+                [9] C. Coyier, "A Complete Guide to Flexbox", 2017 [Online]. Available:  <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a><br>
+                [10] Traversy Media, "CSS Grid Layout Crash Course", 2017 [Online]. Available: <a href="https://youtu.be/jV8B24rSN5o">https://youtu.be/jV8B24rSN5o</a><br>
+                [11] S. Daityari, "Using Meta Tags in HTML: Some Basics and Best Practices", 2014 [Online]. Available: <a href="https://www.sitepoint.com/meta-tags-html-basics-best-practices/">https://www.sitepoint.com/meta-tags-html-basics-best-practices/</a><br>
+                [12] M. Taylor, "How to keep footers at the bottom of the page", 2007 [Online]. Available: <a href="http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page">http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page</a><br>
+                [13] D. Neiner, "What's the easiest way to call a function every 5 seconds in jQuery?", 2010 [Online]. Available: <a href="https://stackoverflow.com/questions/2170923/whats-the-easiest-way-to-call-a-function-every-5-seconds-in-jquery">https://stackoverflow.com/questions/2170923/whats-the-easiest-way-to-call-a-function-every-5-seconds-in-jquery</a>
+            </p>
+            
+        </div>
+    </body>
+</html> 
