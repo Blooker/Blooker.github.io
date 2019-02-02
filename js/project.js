@@ -26,6 +26,10 @@ $(document).ready(function () {
     $("#home-button").click(function () {
         window.location.href = "index.html";
     });
+    
+    $("#playBrowserButton").click(function () {
+        window.location.href = $(this).find("a").attr("href");
+    });
 })
 
 // initPhotoSwipeFromDOM() from here: http://photoswipe.com/documentation/getting-started.html 
