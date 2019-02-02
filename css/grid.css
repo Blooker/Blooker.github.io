@@ -8,6 +8,7 @@ body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;        
     background-color: #eaeaea;
+    overflow-x: hidden;
 }
 
 
@@ -77,7 +78,6 @@ header #page-title > * {
     display: inline-block;
     margin: 0;
     border-radius: 0 0 15px 0;
-
     vertical-align: middle;
 }
 
@@ -155,9 +155,45 @@ main h2 {
 }
 
 main .container {
-    
     padding: 0 60px;
     height: 100%;
+}
+
+/* Grid */
+#grid {
+    padding: 2em 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    grid-column-end: 0px;
+}
+
+#grid > div {
+    background-image: url("../img/interactomy/interactomy_DropAreaImg.jpg");
+    background-position: center;
+    min-height: 240px;
+    border: 1px solid #b1b1b1;
+    border-bottom: 2px solid #00BAFF;
+    padding: 0em;
+}
+
+#grid > div:hover {
+    cursor: pointer;
+}
+
+#grid > div > .project-name {
+    background:#fff;
+    border-top: 1px solid #b1b1b1;
+    margin-top: 200px;
+    padding: 0 8px
+}
+
+#grid > div > .project-name > h3 {
+    position: relative;
+    margin:0;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
 }
 
 /* Footer */

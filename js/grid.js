@@ -24,4 +24,18 @@ $(document).ready(function () {
     $("#home-button").click(function () {
         window.location.href = "index.html";
     });
+    
+    $("#grid > div").hover(function() {
+        $(this).css("border-bottom-color", "#009FFF");
+        
+        var name = $(this).find(".project-name");
+        name.css("background", "#00BAFF")
+        name.find("h3").css("color", "#FFF");
+    }, function () {
+        $(this).css("border-bottom-color", "#00BAFF");
+        
+        var name = $(this).find(".project-name");
+        name.css("background", "#FFF")
+        name.find("h3").css("color", "#000");
+    });
 })
