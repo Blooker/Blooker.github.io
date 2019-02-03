@@ -150,6 +150,8 @@ main {
     min-height: 100%;
     min-height: calc(100% - 96px);
     align-items: center;
+    margin:auto;
+    max-width: 1860px;
 }
 
 main h2 {
@@ -160,7 +162,9 @@ main h2 {
 
 main .container {
     padding: 0 60px 2em 60px;
+    margin: auto;
     height: 100%;
+    
 }
 
 /* Grid */
