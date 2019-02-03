@@ -27,8 +27,9 @@ $(document).ready(function () {
         window.location.href = "index.html";
     });
     
-    $("#playBrowserButton").click(function () {
-        window.location.href = $(this).find("a").attr("href");
+    $(".linkButton").click(function () {
+        window.open($(this).find("a").attr("href"), '_blank');
+//        window.location.href = $(this).find("a").attr("href");
     });
 })
 

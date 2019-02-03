@@ -243,25 +243,44 @@ article {
     margin-bottom: 30px;
 }
 
-#article-content > #buttonContainer {
+#article-content > #buttons > #buttonContainer {
     padding: 0 20px;
 }
 
-#buttonContainer > button {
+#buttons > #buttonContainer > button {
     display: block;
     margin: 10px 0;
-    padding: 0px;
-    height:60px;
+    padding: 4px 0;
+/*    height:60px;*/
     width: 100%;
 }
 
-#buttonContainer > button > p {
+#buttons > #buttonContainer > button > * {
+    vertical-align: middle;
+}
+
+#buttons > #buttonContainer > .imgButton > * {
+    display: inline;
+}
+
+#buttons > #buttonContainer > .imgButton > img {
+    height: 32px;
+    margin-right: 4px;
+}
+
+#buttons > #buttonContainer > button > p {
     padding: 2px 0;
 }
 
-#buttonContainer > button > #playTxt {
+#buttons > #buttonContainer > .imgButton > p {
+    height: 32px;
+}
+
+/*
+#buttons > #buttonContainer > button > #playTxt {
     font-weight: bold;
 }
+*/
 
 #article-content > a > img {
     width: 20px;
