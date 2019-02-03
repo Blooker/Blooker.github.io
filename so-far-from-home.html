@@ -8,7 +8,7 @@
         
         <!-- Misc. website info -->
         <meta name="author" content="Evan Griffiths">
-        <meta name="description" content="March The Cube, a project by Evan Griffiths">
+        <meta name="description" content="Disasteroids, a project by Evan Griffiths">
         
         <!-- Viewport stuff from here: https://youtu.be/bPo7hxD5gfI -->
         <!-- Used to scale elements for mobile devices -->
@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
         
         <!-- Set window/tab title -->
-        <title>Evan Griffiths | March The Cube</title>
+        <title>Evan Griffiths | Disasteroids</title>
         
         <!-- Importing libraries -->
         <!-- jQuery -->
@@ -58,7 +58,8 @@
                         <button id="home-button" type="button"><img id="home-icon" src="img/home_icon.png" alt="Home icon"></button>
                         <h1>Evan Griffiths</h1>
                     </div>
-                    <h2>March The Cube</h2>
+
+                    <h2>Disasteroids</h2>
                 </div>
             </div>
         </header>
@@ -73,35 +74,35 @@
                     
                     <!-- "my-gallery" code from here (some modifications made): http://photoswipe.com/documentation/getting-started.html -->
                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                        <div class="img-main">                    
+                        <div class="img-main">
+                            <!-- YouTube embed code from the share settings on this video: https://youtu.be/HxRwDKqCNqw -->
                             <div id="yt-vid-container">
-                                <!-- YouTube embed code from the share settings on this video: https://youtu.be/2-__Ga1Ijuw -->
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2-__Ga1Ijuw?rel=0" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HxRwDKqCNqw?rel=0" allowfullscreen></iframe>
                             </div>
                         </div>
 
                         <div class="img-grid">
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="img/march-the-cube/march-the-cube_SC1_large.jpg" itemprop="contentUrl" data-size="1920x1080">
-                                    <img src="img/march-the-cube/march-the-cube_SC1_small.jpg" itemprop="thumbnail" alt="Screenshot from the game, picturing a dark cave with enemies in the distance" width="255"/>
+                                <a href="img/disasteroids/disasteroids_SC2_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC2_small.jpg" itemprop="thumbnail" alt="Screenshot from the game containing a heart and ghost asteroid" width="255"/>
+                                </a>
+                            </figure>
+                            
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/disasteroids/disasteroids_SC1_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC1_small.jpg" itemprop="thumbnail" alt="The main menu of Disasteroids, featuring asteroids for buttons" width="255"/>
                                 </a>
                             </figure>
 
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="img/march-the-cube/march-the-cube_SC2_large.jpg" itemprop="contentUrl" data-size="1920x1080">
-                                    <img src="img/march-the-cube/march-the-cube_SC2_small.jpg" itemprop="thumbnail" alt="Screenshot from the game, picturing a different area of the dark cave" width="255"/>
+                                <a href="img/disasteroids/disasteroids_SC3_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC3_small.jpg" itemprop="thumbnail" alt="Asteroid selection menu, where asteroids are split into 'power-up', 'special' and 'skins'" width="255"/>
                                 </a>
                             </figure>
 
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="img/march-the-cube/march-the-cube_SC3_large.jpg" itemprop="contentUrl" data-size="1920x1080">
-                                    <img src="img/march-the-cube/march-the-cube_SC3_small.jpg" itemprop="thumbnail" alt="The game's main menu, where the player can enter a map seed or randomly generate one" width="255"/>
-                                </a>
-                            </figure>
-
-                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="img/march-the-cube/march-the-cube_SC4_large.jpg" itemprop="contentUrl" data-size="1920x1080">
-                                    <img src="img/march-the-cube/march-the-cube_SC4_small.jpg" itemprop="thumbnail" alt="Screenshot from the game, featuring multiple enemies attacking the player" width="255"/>
+                                <a href="img/disasteroids/disasteroids_SC4_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/disasteroids/disasteroids_SC4_small.jpg" itemprop="thumbnail" alt="Screenshot from the game containing a armoured and rainbow asteroid" width="255"/>
                                 </a>
                             </figure>
                         </div>
@@ -113,23 +114,28 @@
                 <article>
                     <h2>About</h2>
                     <div id="article-content">
-                        <p>March The Cube is a first person shooter with procedurally generated levels, built using Unity and C# for my second year computer science project at Sussex Downs College, Lewes. The player has to run around a cave formation, shooting evil blue orbs and collecting health and ammo. They have won when all the angry sphere people are no more!</p>
+                        <p>Disasteroids is a 2D action shooter game, built using Unity and C#. Shoot big hunks of extra-terrestrial rock in a bid to obtain golden asteroid pieces and unlock new asteroids to play with! As the game progresses, more and more asteroids are created, making it harder to avoid them. Make sure to shoot heart asteroids to regain health if you crash into one!</p>
 
-                        <p>The project was created to learn about procedural generation using the marching cubes algorithm and cellular automata. I achieved an A* at A level for my work.</p>
+                        <p>This project isn’t quite finished; the current version has a handful of different asteroid types, including rainbow asteroids and ghost asteroids. Plans for future features include ship customisation and more power-up asteroids.</p>
                         
                         <div id="buttons">
                             <div id="buttonContainer">
-                                <button class="linkButton imgButton">
-                                    <a href="https://github.com/Blooker/MarchTheCube"></a>
-                                    <img src="img/github_icon.png">
-                                    <p><b>Github Repo</b></p>
+                                <button class="linkButton">
+                                    <a href="games/disasteroids"></a>
+                                    <p><b>Click here to play in browser!</b></p>
+                                    <p>Works on desktop</p>
                                 </button>
                             </div>
                         </div>
+<!--
+                        <a href="downloads/%5BEvan%20Griffiths%5D%20Disasteroids.zip">
+                            <img src="img/folder-icon.png">Download .exe for Windows
+                        </a>
+-->
                     </div>
                     <div id="my-role">
                         <h3>My role</h3>
-                        <p>I was the sole developer on this project; I created the implementation of the marching cubes algorithm from scratch in C#, referring to materials that I found about it on the internet. I also designed the menus and graphics in the game.</p>
+                        <p>I am the sole developer on Disasteroids, creating all of the art and sound assets as well as programming the ship and asteroid behaviours. This was one of my first major Unity projects, and I used it to learn some of the fundamentals of the engine, such as its physics engine and sprite rendering capabilities.</p>
                     </div>
                 </article>
             </div>
