@@ -49,4 +49,13 @@ $(document).ready(function () {
         name.css("background", "#FFF")
         name.find("h3").css("color", "#000");
     });
+    
+    $("#grid > div").click(function () {
+        var url = $(this).find("a");
+        
+        if (typeof url.attr("href") !== "undefined"){
+            window.location.href = url.attr("href");
+        }
+        
+    });
 })
