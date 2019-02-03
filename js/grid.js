@@ -25,6 +25,17 @@ $(document).ready(function () {
         window.location.href = "index.html";
     });
     
+    $("#grid > div").each(function() {
+        var thumb = $(this).find("img");
+        
+        if (typeof thumb.attr("src") !== "undefined"){
+            console.log(thumb.attr("src"));
+            var urlStr = "url(" + thumb.attr("src") + ")";
+            
+            $(this).css("background-image", urlStr);
+        }
+    });
+    
     $("#grid > div").hover(function() {
         $(this).css("border-bottom-color", "#009FFF");
         

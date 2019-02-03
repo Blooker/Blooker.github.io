@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -155,7 +159,7 @@ main h2 {
 }
 
 main .container {
-    padding: 0 60px;
+    padding: 0 60px 2em 60px;
     height: 100%;
 }
 
@@ -175,6 +179,7 @@ main .container {
     border: 1px solid #b1b1b1;
     border-bottom: 2px solid #00BAFF;
     padding: 0em;
+    background-size: cover;
 }
 
 #grid > div:hover {
@@ -244,27 +249,10 @@ footer a {
 
 /* Media queries */
 @media (max-width: 1080px) {
-    article {
-        flex: 2;
+    #grid {
+        grid-template-columns: 1fr 1fr;
     }
-    
-    .my-gallery h1 {
-        width: 260px;
-    }
-    
-    .img-main figure, #yt-vid-container iframe {
-        width:260px;
-        height: 146px;
-    }
-    
-    .img-grid figure {
-        margin-bottom: 10px;
-    }
-    
-    .img-grid {
-        width: 258px;
-        display: block;
-    }
+
 }
 
 @media (max-width: 768px) {
@@ -304,7 +292,7 @@ footer a {
     
     main .container {
         display: block;
-        padding: 0;
+/*        padding: 0;*/
     }
     
     .img-grid figure {
