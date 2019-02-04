@@ -360,6 +360,10 @@ footer p {
     width: 100%;
 }
 
+footer #credits {
+    font-size: 0.6em;
+}
+
 footer ul  {
     margin: 0;
     padding: 0;
