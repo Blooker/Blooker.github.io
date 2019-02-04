@@ -104,7 +104,23 @@ header #page-title h2 {
 /*    width: 10px*/
 }
 
+header button {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin: 0 5px 0 0;
+    
+    width:32px;
+    height:32px;
+    padding: 0;
+    
+    border: none;
+    background-color: #f4f4f4;
+    border: 1px solid #b4b4b4;
+}
+
 header #home-button {
+/*
     display: inline-block;
     position: relative;
     top: 4px;
@@ -118,14 +134,20 @@ header #home-button {
     border: none;
     background-color: #f4f4f4;
     border: 1px solid #b4b4b4;
+*/
 }
 
-header #home-button:hover {
+header button:hover {
     background-color: #fff;
     border: 1px solid #aaa;
 }
 
 header #home-icon {
+    width:20px;
+    margin: 5px;
+}
+
+header #back-icon {
     width:20px;
     margin: 5px;
 }
@@ -384,12 +406,17 @@ footer a {
         line-height: 30px;
     }
     
-    header #home-button {
+    header button {
         width: 24px;
         height: 24px;
     }
     
     header #home-icon {
+        width: 16px;
+        margin: 3px;
+    }
+    
+    header #back-icon {
         width: 16px;
         margin: 3px;
     }
