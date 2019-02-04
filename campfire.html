@@ -8,7 +8,7 @@
         
         <!-- Misc. website info -->
         <meta name="author" content="Evan Griffiths">
-        <meta name="description" content="Violence in Video Games, a project by Evan Griffiths">
+        <meta name="description" content="Campfire, a project by Evan Griffiths">
         
         <!-- Viewport stuff from here: https://youtu.be/bPo7hxD5gfI -->
         <!-- Used to scale elements for mobile devices -->
@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="lib/photoswipe/default-skin/default-skin.css">
         
         <!-- Set window/tab title -->
-        <title>Evan Griffiths | Violence in Video Games</title>
+        <title>Evan Griffiths | Campfire</title>
         
         <!-- Importing libraries -->
         <!-- jQuery -->
@@ -58,10 +58,14 @@
             <div class="container">
                 <div id="page-title">
                     <div id="name-box">
-                        <button id="home-button" type="button"><img id="home-icon" src="img/home_icon.png" alt="Home icon"></button>
+                        <button id="return-button" type="button">
+                            <a href="code-jams.html"></a>
+                            <img id="back-icon" src="img/back_icon.png" alt="Home icon">
+                        </button>
                         <h1>Evan Griffiths</h1>
                     </div>
-                    <h2>V.I.V.G.</h2>
+
+                    <h2>Campfire</h2>
                 </div>
             </div>
         </header>
@@ -76,27 +80,79 @@
                     
                     <!-- "my-gallery" code from here (some modifications made): http://photoswipe.com/documentation/getting-started.html -->
                     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-                        <div class="img-main big-vid">                        
+                        <div class="img-main">
+                            <!-- YouTube embed code from the share settings on this video: https://youtu.be/HxRwDKqCNqw -->
                             <div id="yt-vid-container">
-                                <!-- YouTube embed code from the share settings on this video: https://youtu.be/KZrage7LKeI -->
-                                <iframe src="https://www.youtube.com/embed/KZrage7LKeI?rel=0" allowfullscreen></iframe>
+<!--                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HxRwDKqCNqw?rel=0" allowfullscreen></iframe>-->
+                                <iframe src="https://player.vimeo.com/video/315162189" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
                             </div>
                         </div>
+
+                        <div class="img-grid">
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/so-far-from-home/SoFar_SC2_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/so-far-from-home/SoFar_SC2_small.jpg" itemprop="thumbnail" alt="Screenshot from the game containing a biscuit" width="255"/>
+                                </a>
+                            </figure>
+                            
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/so-far-from-home/SoFar_SC1_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/so-far-from-home/SoFar_SC1_small.jpg" itemprop="thumbnail" alt="The sofa view of So Far From Home" width="255"/>
+                                </a>
+                            </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/so-far-from-home/SoFar_SC4_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/so-far-from-home/SoFar_SC4_small.jpg" itemprop="thumbnail" alt="Asteroid selection menu, where asteroids are split into 'power-up', 'special' and 'skins'" width="255"/>
+                                </a>
+                            </figure>
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="img/so-far-from-home/SoFar_SC3_large.jpg" itemprop="contentUrl" data-size="1920x1080">
+                                    <img src="img/so-far-from-home/SoFar_SC3_small.jpg" itemprop="thumbnail" alt="Screenshot from the game containing a armoured and rainbow asteroid" width="255"/>
+                                </a>
+                            </figure>
+                        </div>
                     </div>
-                  
+                    
+                    <p id="gallery-instruction">Click to enlarge</p>
                 </div>
                 
                 <article>
                     <h2>About</h2>
                     <div id="article-content">
-                        <p>Violence in Video Games is a short documentary film made for the University of Sussex Space Invaders competition. In the film, we questioned  whether or not violence in video games actually causes people to commit real life acts of violence, compiling news clips, game footage and opinions from internet personalities.</p>
+                        <p>Campfire is a first-person-shooter firefighting game, built using Unity and C#. The kids at Camp Sandy Balls (real place, google it) have been practicing their fire starting skills too much and the whole place is alight! Only you, the camp's resident bucket, can save the day. Can you put out the fires quickly enough?! Only one way to find out.</p>
 
-
-                        <p>The film also includes opinions from people who play video games, as well as an original soundtrack from the short film’s researcher Odhran Odonoghue, who I would later go on to work with on <a href="interactomy.html">Interactomy</a>.</p>
+                        <p>The game features fast paced run and gun gameplay and low-fi Doom-style sprites. It was made in 24 hours for Develop:Brighton Game Jam 2018, with the theme "Heatwave".</p>
+                        
+                        <div id="buttons">
+<!--
+                            <div id="buttonContainer">
+                                <button class="linkButton imgButton">
+                                    <a href="https://github.com/paulhayes/GGJ2019"></a>
+                                    <img src="img/github_icon.png">
+                                    <p><b>Github Repo</b></p>
+                                </button>
+                            </div>
+-->
+                            <div id="buttonContainer">
+                                <button class="linkButton imgButton">
+                                    <a href="https://blooker.itch.io/campfire"></a>
+                                    <img src="img/itch_icon.svg">
+                                    <p><b>Itch.io Page</b></p>
+                                </button>
+                            </div>
+                        </div>
+<!--
+                        <a href="downloads/%5BEvan%20Griffiths%5D%20Disasteroids.zip">
+                            <img src="img/folder-icon.png">Download .exe for Windows
+                        </a>
+-->
                     </div>
                     <div id="my-role">
                         <h3>My role</h3>
-                        <p>I was the main editor for this short film, which was made using Sony Vegas. I also did some research on statistics and news articles surrounding the topic of the film, compiling clips from the news and from YouTubers.</p>
+                        <p>I was responsible for creating the 3D character controller. Using Unity's Rigidbody system, I designed the character's movement and shooting controls. I also created the game's level using ProBuilder.</p>
                     </div>
                 </article>
             </div>
