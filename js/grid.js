@@ -50,12 +50,20 @@ $(document).ready(function () {
         name.find("h3").css("color", "#000");
     });
     
-    $("#grid > div").click(function () {
-        var url = $(this).find("a");
+    $("#grid > div").mousedown(function (e) {
+        console.log(e.which);
         
+        var url = $(this).find("a");
+
         if (typeof url.attr("href") !== "undefined"){
-            window.location.href = url.attr("href");
+            if (e.which == 1) {
+                window.location.href = url.attr("href");
+            } else if (e.which == 2) {
+                window.open(url.attr("href"), "_blank");
+            }
+            
         }
         
+
     });
 })
