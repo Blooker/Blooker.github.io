@@ -209,6 +209,12 @@ main .container {
     left: -1px;
 }
 
+.folder-icon {
+    width:32px;
+    top: 4px;
+    left: 4px;
+}
+
 .play-icon {
     width: 28px;
     top: 7px;
