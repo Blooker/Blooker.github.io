@@ -248,6 +248,9 @@ function initDropArea () {
                 case (3):
                     imgUrl = "img/disasteroids/disasteroids_DropAreaImg.jpg";
                     break;
+                case (4):
+                    imgUrl = "img/code-jam-DropImg.jpg";
+                    break;
                     
                 default:
                     imgUrl = "img/16-9-Placeholder.jpg";
