@@ -1,3 +1,5 @@
+ctrlPressed = false;
+
 window.onpageshow = function () {
     $("main, header, footer").show();
 }
@@ -23,6 +25,16 @@ $(document).ready(function () {
     // When home button clicked, set URL to index.html
     $("#home-button").click(function () {
         window.location.href = "index.html";
+    });
+    
+    $(window).keydown(function(evt) {
+        if (evt.which == 17) { // ctrl
+            ctrlPressed = true;
+        }
+    }).keyup(function(evt) {
+        if (evt.which == 17) { // ctrl
+            ctrlPressed = false;
+        }
     });
     
     $("#grid > div").each(function() {
@@ -58,10 +70,10 @@ $(document).ready(function () {
         var url = $(this).find("a");
 
         if (typeof url.attr("href") !== "undefined"){
-            if (e.which == 1) {
-                window.location.href = url.attr("href");
-            } else if (e.which == 2) {
+            if (e.which == 2 || (e.which == 1 && ctrlPressed)) {
                 window.open(url.attr("href"), "_blank");
+            } else if (e.which == 1) {
+                window.location.href = url.attr("href");
             }
             
         }
