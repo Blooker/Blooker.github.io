@@ -1,3 +1,5 @@
+ctrlPressed = false;
+
 window.onpageshow = function () {
     $("main, header, footer").show();
 }
@@ -25,6 +27,16 @@ $(document).ready(function () {
         window.location.href = "index.html";
     });
     
+    $(window).keydown(function(evt) {
+        if (evt.which == 17) { // ctrl
+            ctrlPressed = true;
+        }
+    }).keyup(function(evt) {
+        if (evt.which == 17) { // ctrl
+            ctrlPressed = false;
+        }
+    });
+    
     $("#grid > div").each(function() {
         var thumb = $(this).find("img");
         
@@ -40,13 +52,15 @@ $(document).ready(function () {
         $(this).css("border-bottom-color", "#009FFF");
         
         var name = $(this).find(".project-name");
-        name.css("background", "#00BAFF")
+        name.css("background", "#00BAFF");
+        name.css("border-top", "1px solid #009FFF");
         name.find("h3").css("color", "#FFF");
     }, function () {
         $(this).css("border-bottom-color", "#00BAFF");
         
         var name = $(this).find(".project-name");
-        name.css("background", "#FFF")
+        name.css("background", "#FFF");
+        name.css("border-top", "1px solid #b1b1b1");
         name.find("h3").css("color", "#000");
     });
     
@@ -56,10 +70,10 @@ $(document).ready(function () {
         var url = $(this).find("a");
 
         if (typeof url.attr("href") !== "undefined"){
-            if (e.which == 1) {
-                window.location.href = url.attr("href");
-            } else if (e.which == 2) {
+            if (e.which == 2 || (e.which == 1 && ctrlPressed)) {
                 window.open(url.attr("href"), "_blank");
+            } else if (e.which == 1) {
+                window.location.href = url.attr("href");
             }
             
         }
