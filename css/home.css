@@ -419,6 +419,10 @@ footer a {
         top: -1px;
         left: -1px;
     }
+    
+    .folder-icon {
+        width:23px;
+    }
 
     .play-icon {
         width: 18px;
