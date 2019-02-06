@@ -40,13 +40,15 @@ $(document).ready(function () {
         $(this).css("border-bottom-color", "#009FFF");
         
         var name = $(this).find(".project-name");
-        name.css("background", "#00BAFF")
+        name.css("background", "#00BAFF");
+        name.css("border-top", "1px solid #009FFF");
         name.find("h3").css("color", "#FFF");
     }, function () {
         $(this).css("border-bottom-color", "#00BAFF");
         
         var name = $(this).find(".project-name");
-        name.css("background", "#FFF")
+        name.css("background", "#FFF");
+        name.css("border-top", "1px solid #b1b1b1");
         name.find("h3").css("color", "#000");
     });
     
